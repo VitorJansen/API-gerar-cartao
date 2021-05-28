@@ -37,7 +37,6 @@ namespace VaiVoaAPI
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "VaiVoaAPI", Version = "v1" });
             });
 
-            //services.AddScoped<IRepositorio, MockRepositorio>();
             services.AddScoped<IRepositorio, SqlRepositorio>();
         }
 
