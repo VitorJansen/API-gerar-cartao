@@ -11,6 +11,6 @@ namespace VaiVoaAPI.Models
         public string Email { get; set; }
 
         [Required]
-        public int NumeroCartao { get; set; }
+        public long NumeroCartao { get; set; }
     }
 }
