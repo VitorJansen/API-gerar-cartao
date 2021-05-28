@@ -7,6 +7,7 @@ namespace VaiVoaAPI.Data
     {
         bool SaveChanges();
         IEnumerable<Cartao> ListarCartoes(string email);
-        Cartao CriarNovoCartao(string email);
+        void CriarNovoCartao(Cartao cartao);
+        Cartao ValidarEmail(string email);
     }
 }

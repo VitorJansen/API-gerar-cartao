@@ -4,7 +4,7 @@ namespace VaiVoaAPI.Dtos
 {
     public class CartaoGetDTO
     {
-        [Required]
-        public string Email { get; set; }
+        public long Id { get; set; }
+        public long NumeroCartao { get; set; }
     }
 }

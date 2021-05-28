@@ -8,7 +8,7 @@ namespace VaiVoaAPI.Profiles
     {
         public CartosProfile()
         {
-            CreateMap<CartaoGetDTO, Cartao>();
+            CreateMap<Cartao, CartaoGetDTO>();
             CreateMap<CartaoPostDTO, Cartao>();
         }
     }
