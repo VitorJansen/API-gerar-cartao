@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using VaiVoaAPI.Data;
 
 namespace VaiVoaAPI
 {
@@ -31,6 +32,8 @@ namespace VaiVoaAPI
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "VaiVoaAPI", Version = "v1" });
             });
+
+            services.AddScoped<IRepositorio, MockRepositorio>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
